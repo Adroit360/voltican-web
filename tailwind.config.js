@@ -6,6 +6,9 @@ module.exports = {
       height: {
         "intro-page-height": "calc(100vh - 5rem)",
       },
+      colors: {
+        primary: "#0A67C7",
+      },
     },
   },
   plugins: [],
