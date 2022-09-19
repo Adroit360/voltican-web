@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        "intro-page-height": "calc(100vh - 5rem)",
+      },
+      colors: {
+        primary: "#0A67C7",
+        warn: "#FF9900",
+        "primary-dark": "#003469",
+        "footer-bg": "#00172F",
+        "text-black": "#010101",
+      },
+    },
   },
   plugins: [],
 };
