@@ -1,1 +1,106 @@
-<p>navbar works!</p>
+<nav
+  class="w-full px-4 xl:px-10 2xl:px-32 py-3 flex items-center justify-between min-h-[3.5rem] 2xl:min-h-[5rem]"
+>
+  <div class="logo cursor-pointer w-[15.5rem] h-[4.6rem]">
+    <img
+      src="../../../assets/VolticanLogo.png"
+      class="w-full h-full object-cover"
+      alt="logo"
+    />
+  </div>
+  <!--nav links-->
+  <ul
+    class="flex text-primary font-normal text-xl 2xl:text-[1.5rem] gap-8 items-center"
+  >
+    <li class="font-bold hover:font-bold">
+      <a href="#">Home</a>
+    </li>
+    <li class="group cursor-pointer hover:font-bold relative">
+      <p class="flex gap-3 items-center">
+        Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
+      </p>
+
+      <div
+        id="dropdown"
+        class="hidden -left-10 absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+      >
+        <ul
+          class="py-1 text-base text-primary"
+          aria-labelledby="dropdownDefault"
+        >
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Data Analytics &amp; Modern BI</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Big Data &amp; Engineering</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Strategy &amp; Architecture</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Data Science/AI/ML</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Other Services</a
+            >
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="hover:font-bold">
+      <a href="#">Certifications/Contract Vehicles</a>
+    </li>
+    <li class="group hover:font-bold cursor-pointer relative">
+      <p class="flex gap-3 items-center">
+        About us <span class="iconify" data-icon="ep:arrow-down-bold"></span>
+      </p>
+      <div
+        id="dropdown"
+        class="hidden absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+      >
+        <ul
+          class="py-1 text-base text-primary"
+          aria-labelledby="dropdownDefault"
+        >
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Voltican Edge</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100">Clientele</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >Our Experts</a
+            >
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="hover:font-bold"><a href="#">Careers</a></li>
+    <li class="hover:font-bold"><a href="#">Contact Us</a></li>
+  </ul>
+  <!--End nav links-->
+  <!-- <div class="flex gap-8 text-primary items-center">
+    <button
+      class="text-xl 2xl:text-[1.5rem] 2xl:h-[3.75rem] h-[2.75rem] font-bold px-8 border-2 border-primary"
+    >
+      Contact Us
+    </button>
+    <span
+      class="iconify text-3xl cursor-pointer"
+      data-icon="fa-solid:search"
+    ></span>
+  </div> -->
+</nav>
