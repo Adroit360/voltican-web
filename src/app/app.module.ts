@@ -11,6 +11,9 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CarrersComponent } from './pages/carrers/carrers.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CertificationsComponent } from './pages/certifications/certifications.component';
+import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
+import { VolticanEdgeComponent } from './pages/about-us/voltican-edge/voltican-edge.component';
+import { ClienteleComponent } from './pages/about-us/clientele/clientele.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CertificationsComponent } from './pages/certifications/certifications.c
     AboutUsComponent,
     CarrersComponent,
     ContactUsComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    OurExpertsComponent,
+    VolticanEdgeComponent,
+    ClienteleComponent
   ],
   imports: [
     BrowserModule,
