@@ -20,7 +20,7 @@
   <!--Begin Experts Section-->
   <section class="my-16 flex w-full items-center gap-8 flex-col justify-center">
     <div class="max-w-[73rem]">
-      <h1 class="text-[4rem] font-bold mb-8">Lorem Cupidatat Duis Cillum</h1>
+      <h1 class="text-6xl font-bold mb-8">Lorem Cupidatat Duis Cillum</h1>
       <div class="gap-6 flex-wrap flex w-full">
         <div
           *ngFor="let item of [1, 2, 3, 4, 5, 6]"
@@ -119,8 +119,36 @@
   </section>
   <!--modal-->
   <div
-    class="fixed z-40 top-0 left-0 right-0 bottom-0 w-full h-full bg-modalBackground"
+    *ngIf="modalStatus"
+    class="fixed z-40 top-0 left-0 right-0 pt-10 bottom-0 w-full flex items-start justify-center h-full bg-modalBackground"
   >
-    <div class="max-w-["></div>
+    <div
+      class="max-w-[80.5rem] px-20 py-20 w-full bg-white min-h-[44.5rem] mx-10 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+    >
+      <div
+        class="w-[20.6rem] float-left mr-10 mb-5 h-[20.63rem] bg-text-gray"
+      ></div>
+      <p class="text-base text-text-black 2xl:text-lg text-[1.75rem] font-bold">
+        Howard Arlene
+      </p>
+      <p class="text-sm my-3 2xl:text-[1.25rem]">Finance Manager</p>
+
+      <p class="text-text-gray leading-9 text-[1.25rem] 2xl:text-2xl">
+        Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
+        cillum dolor. Volup Nulla Lorem mollit cupidatat irure. Laborum magna
+        nulla duis ullamco cillum dolor. Voluptate exercitation incididunt
+        aliquip deserunt. tate exercitation incididunt aliquip deserunt. Nulla
+        Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
+        dolor. Voluptate exercitation incididunt aliquip deserunt. Nulla Lorem
+        mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+        Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
+        cillum dolor. Volup Nulla Lorem mollit cupidatat irure. Laborum magna
+        nulla duis ullamco cillum dolor. Voluptate exercitation incididunt
+        aliquip deserunt. tate exercitation incididunt aliquip deserunt. Nulla
+        Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
+        dolor. Voluptate exercitation incididunt aliquip deserunt. Nulla Lorem
+        mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.
+      </p>
+    </div>
   </div>
 </div>
