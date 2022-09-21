@@ -12,8 +12,12 @@
   <ul
     class="flex text-primary font-normal text-xl 2xl:text-[1.5rem] gap-8 items-center"
   >
-    <li class="font-bold hover:font-bold">
-      <a href="#">Home</a>
+    <li
+      routerLink="/"
+      routerLinkActive="active"
+      class="cursor-pointer hover:font-bold"
+    >
+      <a>Home</a>
     </li>
     <li class="group cursor-pointer hover:font-bold relative">
       <p class="flex gap-3 items-center">
@@ -71,25 +75,39 @@
           class="py-1 text-base text-primary"
           aria-labelledby="dropdownDefault"
         >
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-              >Voltican Edge</a
-            >
+          <li
+            routerLink="/about/voltican-edge"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Voltican Edge</a>
           </li>
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100">Clientele</a>
+          <li routerLink="/about/clientele" routerLinkActive="dropdown-active">
+            <a class="block py-2 px-4 hover:bg-gray-100">Clientele</a>
           </li>
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-              >Our Experts</a
-            >
+          <li
+            routerLink="/about/our-experts"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Our Experts</a>
           </li>
         </ul>
       </div>
     </li>
 
-    <li class="hover:font-bold"><a href="#">Careers</a></li>
-    <li class="hover:font-bold"><a href="#">Contact Us</a></li>
+    <li
+      routerLink="/careers"
+      routerLinkActive="active"
+      class="hover:font-bold cursor-pointer"
+    >
+      <a>Careers</a>
+    </li>
+    <li
+      class="hover:font-bold cursor-pointer"
+      routerLink="/contact-us"
+      routerLinkActive="active"
+    >
+      <a>Contact Us</a>
+    </li>
   </ul>
   <!--End nav links-->
   <!-- <div class="flex gap-8 text-primary items-center">
