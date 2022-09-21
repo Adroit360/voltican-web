@@ -1,3 +1,8 @@
+import { CertificationsComponent } from './pages/certifications/certifications.component';
+import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
+import { DataScienceComponent } from './pages/services/data-science/data-science.component';
+import { BigDataComponent } from './pages/services/big-data/big-data.component';
+import { DataAnalyticsComponent } from './pages/services/data-analytics/data-analytics.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CarrersComponent } from './pages/carrers/carrers.component';
 import { ClienteleComponent } from './pages/about-us/clientele/clientele.component';
@@ -6,6 +11,7 @@ import { VolticanEdgeComponent } from './pages/about-us/voltican-edge/voltican-e
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { StrategyComponent } from './pages/services/strategy/strategy.component';
 
 const routes: Routes = [
   {
@@ -16,6 +22,12 @@ const routes: Routes = [
   { path: 'about/our-experts', component: OurExpertsComponent },
   { path: 'careers', component: CarrersComponent },
   { path: 'contact-us', component: ContactUsComponent },
+  { path: 'services/data-analytics', component: DataAnalyticsComponent },
+  { path: 'services/big-data-and-engineering', component: BigDataComponent },
+  { path: 'services/strategy-and-architecture', component: StrategyComponent },
+  { path: 'services/data-science', component: DataScienceComponent },
+  { path: 'services/other-services', component: OtherServicesComponent },
+  { path: 'certifications', component: CertificationsComponent },
   { path: '', component: HomeComponent, pathMatch: 'full' },
 ];
 

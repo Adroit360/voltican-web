@@ -26,7 +26,10 @@
           *ngFor="let item of [1, 2, 3, 4, 5, 6]"
           class="relative cursor-pointer group w-full flex items-end px-4 py-8 max-w-[23.125rem] h-[23.125rem] bg-text-gray"
         >
-          <div class="text-[#2D2323] flex flex-col gap-2 w-full text-center">
+          <div
+            (click)="onShowExpert()"
+            class="text-[#2D2323] flex flex-col gap-2 w-full text-center"
+          >
             <p
               class="text-base 2xl:text-lg text-center text-[1.75rem] font-bold"
             >
@@ -35,6 +38,7 @@
             <p class="text-sm 2xl:text-[1.5rem]">Finance Manager</p>
           </div>
           <div
+            (click)="onShowExpert()"
             class="absolute p-6 flex items-center justify-center top-0 left-0 w-full h-full bg-overlay transition-all scale-0 group-hover:scale-100 ease-in-out duration-200 delay-100"
           >
             <div class="text-white flex flex-col gap-4 w-full text-center">
@@ -120,6 +124,7 @@
   <!--modal-->
   <div
     *ngIf="modalStatus"
+    (click)="onShowExpert()"
     class="fixed z-40 top-0 left-0 right-0 pt-10 bottom-0 w-full flex items-start justify-center h-full bg-modalBackground"
   >
     <div

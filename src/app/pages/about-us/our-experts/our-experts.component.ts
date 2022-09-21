@@ -10,4 +10,8 @@ export class OurExpertsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onShowExpert() {
+    this.modalStatus = !this.modalStatus;
+  }
 }

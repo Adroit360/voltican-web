@@ -32,36 +32,51 @@
           class="py-1 text-base text-primary"
           aria-labelledby="dropdownDefault"
         >
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+          <li
+            routerLink="/services/data-analytics"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100"
               >Data Analytics &amp; Modern BI</a
             >
           </li>
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+          <li
+            routerLink="/services/big-data-and-engineering"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100"
               >Big Data &amp; Engineering</a
             >
           </li>
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+          <li
+            routerLink="/services/strategy-and-architecture"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100"
               >Strategy &amp; Architecture</a
             >
           </li>
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-              >Data Science/AI/ML</a
-            >
+          <li
+            routerLink="/services/data-science"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Data Science/AI/ML</a>
           </li>
-          <li>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-              >Other Services</a
-            >
+          <li
+            routerLink="/services/other-services"
+            routerLinkActive="dropdown-active"
+          >
+            <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
           </li>
         </ul>
       </div>
     </li>
-    <li class="hover:font-bold">
-      <a href="#">Certifications/Contract Vehicles</a>
+    <li
+      routerLink="/certifications"
+      routerLinkActive="active"
+      class="hover:font-bold cursor-pointer"
+    >
+      <a>Certifications/Contract Vehicles</a>
     </li>
     <li class="group hover:font-bold cursor-pointer relative">
       <p class="flex gap-3 items-center">

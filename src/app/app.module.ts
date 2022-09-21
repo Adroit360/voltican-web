@@ -14,6 +14,11 @@ import { CertificationsComponent } from './pages/certifications/certifications.c
 import { OurExpertsComponent } from './pages/about-us/our-experts/our-experts.component';
 import { VolticanEdgeComponent } from './pages/about-us/voltican-edge/voltican-edge.component';
 import { ClienteleComponent } from './pages/about-us/clientele/clientele.component';
+import { DataAnalyticsComponent } from './pages/services/data-analytics/data-analytics.component';
+import { BigDataComponent } from './pages/services/big-data/big-data.component';
+import { StrategyComponent } from './pages/services/strategy/strategy.component';
+import { DataScienceComponent } from './pages/services/data-science/data-science.component';
+import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { ClienteleComponent } from './pages/about-us/clientele/clientele.compone
     CertificationsComponent,
     OurExpertsComponent,
     VolticanEdgeComponent,
-    ClienteleComponent
+    ClienteleComponent,
+    DataAnalyticsComponent,
+    BigDataComponent,
+    StrategyComponent,
+    DataScienceComponent,
+    OtherServicesComponent
   ],
   imports: [
     BrowserModule,
