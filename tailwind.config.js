@@ -6,6 +6,10 @@ module.exports = {
       height: {
         "intro-page-height": "calc(100vh - 5rem)",
       },
+      fontSize: {
+        heading: "3.375rem",
+        subheading: "2rem",
+      },
       colors: {
         primary: "#0A67C7",
         warn: "#FF9900",
