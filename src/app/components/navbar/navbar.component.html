@@ -9,27 +9,28 @@
     />
   </div>
   <!--nav links-->
-  <ul
-    class="flex text-primary font-normal text-xl 2xl:text-[1.5rem] gap-8 items-center"
-  >
+  <ul class="flex text-primary font-normal text-base gap-8 items-center">
     <li
       routerLink="/"
       routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
       class="cursor-pointer hover:font-bold"
+      (click)="onCloseDropdownMenu()"
     >
       <a>Home</a>
     </li>
     <li class="group cursor-pointer hover:font-bold relative">
-      <p class="flex gap-3 items-center">
+      <p class="flex gap-3 items-center" (click)="onServicesMenu()">
         Services<span class="iconify" data-icon="ep:arrow-down-bold"></span>
       </p>
 
       <div
         id="dropdown"
-        class="hidden -left-10 absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+        *ngIf="services"
+        class="-left-10 absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
       >
         <ul
-          class="py-1 text-base text-primary"
+          class="py-1 text-base font-normal text-primary"
           aria-labelledby="dropdownDefault"
         >
           <li
@@ -75,19 +76,21 @@
       routerLink="/certifications"
       routerLinkActive="active"
       class="hover:font-bold cursor-pointer"
+      (click)="onCloseDropdownMenu()"
     >
       <a>Certifications/Contract Vehicles</a>
     </li>
     <li class="group hover:font-bold cursor-pointer relative">
-      <p class="flex gap-3 items-center">
+      <p class="flex gap-3 items-center" (click)="onShowAboutUsMenu()">
         About us <span class="iconify" data-icon="ep:arrow-down-bold"></span>
       </p>
       <div
         id="dropdown"
-        class="hidden absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
+        *ngIf="aboutUs"
+        class="absolute group-hover:block z-50 w-max bg-white rounded divide-y divide-gray-100 shadow-md"
       >
         <ul
-          class="py-1 text-base text-primary"
+          class="py-1 text-base font-normal text-primary"
           aria-labelledby="dropdownDefault"
         >
           <li
@@ -113,6 +116,7 @@
       routerLink="/careers"
       routerLinkActive="active"
       class="hover:font-bold cursor-pointer"
+      (click)="onCloseDropdownMenu()"
     >
       <a>Careers</a>
     </li>
@@ -120,6 +124,7 @@
       class="hover:font-bold cursor-pointer"
       routerLink="/contact-us"
       routerLinkActive="active"
+      (click)="onCloseDropdownMenu()"
     >
       <a>Contact Us</a>
     </li>
