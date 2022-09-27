@@ -1,4 +1,4 @@
-<main class="min-h-screen text-text-black w-full">
+<main class="min-h-screen relative text-text-black w-full">
   <app-navbar></app-navbar>
   <router-outlet></router-outlet>
   <!--Begin Seciton 3-->
@@ -13,13 +13,19 @@
     "
     data-aos="fade-up"
     data-aos-delay="400"
-    class="w-full text-white mix-blend-normal bg-black/60 text-center mt-16 bg-no-repeat bg-cover bg-center gap-8 flex flex-col items-center justify-center min-h-[40rem]"
+    class="w-full text-white mix-blend-normal bg-black/60 text-center mt-16 bg-no-repeat bg-cover bg-center gap-8 flex flex-col items-center justify-center h-full min-h-[40rem]"
   >
-    <h1 class="text-heading font-bold" data-aos="fade-left">
+    <h1
+      class="text-mobileHeading p-2 sm:text-heading font-bold"
+      data-aos="fade-left"
+    >
       We specialize in aligning your strategy and technology needs to your
       business strategy.
     </h1>
-    <p class="max-w-[49rem] w-full text-2xl" data-aos="fade-right">
+    <p
+      class="max-w-[49rem] w-full text-mobileSubText sm:text-subText"
+      data-aos="fade-right"
+    >
       Our reputation is driven by a strong conviction that a successful business
       investment requires an attention to detail to unlock value for any
       investment.
@@ -34,20 +40,24 @@
   <!--End Seciton 3-->
   <!--Begin Testimonial Section-->
   <section
-    class="w-full text-center gap-4 my-32 flex flex-col items-center justify-center min-h-[40rem]"
+    class="w-full px-6 sm:px-10 text-center gap-4 my-32 flex flex-col items-center justify-center min-h-[40rem]"
   >
-    <h1 class="text-[1.75rem] font-bold">Testimonial</h1>
-    <h1 class="text-heading font-bold">What our clients are saying</h1>
+    <h1 class="text-[1.5rem] sm:text-[1.75rem] font-bold">Testimonial</h1>
+    <h1 class="text-mobileHeading sm:text-heading font-bold">
+      What our clients are saying
+    </h1>
     <!--testimonial section-->
     <div
-      class="max-w-[73rem] flex mt-10 justify-between gap-16 w-full h-[38.75rem]"
+      class="max-w-[73rem] flex-col tablet:flex-row flex mt-10 items-center justify-between gap-16 w-full tablet:h-[38.75rem]"
     >
       <!--customer image-->
       <div
-        class="w-full max-w-[33rem] flex-shrink-0 flex-grow-0 basis=[33rem] h-full bg-gray-500"
+        class="w-full max-w-[33rem] h-[20rem] md:h-[25rem] flex-shrink-0 flex-grow-0 basis=[33rem] tablet:h-full bg-gray-500"
       ></div>
       <!--customer testimonial-->
-      <div class="flex-grow flex pb-20 flex-col justify-between text-left">
+      <div
+        class="md:w-[33rem] lg:w-auto w-full flex-grow flex tablet:pb-20 gap-5 tablet:gap-0 flex-col justify-between text-left"
+      >
         <!--Ratings-->
         <div class="flex gap-2">
           <span
@@ -62,7 +72,9 @@
           ></span>
         </div>
         <!--testimonial-->
-        <p class="text-left text-2xl text-[#6F6D71] font-normal">
+        <p
+          class="text-left text-mobileSubText sm:text-subText text-[#6F6D71] font-normal"
+        >
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -97,39 +109,51 @@
   <!--End Testimonial Section-->
   <!--Begin News letter Section-->
   <section
-    class="h-[18.8rem] mt-32 flex gap-10 items-center justify-center bg-primary"
+    class="min-h-[18.8rem] px-6 sm:px-10 py-6 tablet:py-0 mt-8 sm:mt-32 flex flex-col tablet:flex-row gap-10 items-center justify-center bg-primary"
   >
     <div class="text-white">
-      <h1 class="text-mainText font-bold mb-4">Newsletter</h1>
-      <p class="text-subText font-normal max-w-[31.4rem] w-full">
+      <h1 class="text-mobileMainText sm:text-mainText font-bold mb-4">
+        Newsletter
+      </h1>
+      <p
+        class="text-mobileSubText sm:text-subText font-normal max-w-[31.4rem] w-full"
+      >
         Signup our newsletter to get update information, news or insight.
       </p>
     </div>
-    <div class="flex gap-8">
+    <div class="flex w-full sm:w-auto flex-col gap-4 tablet:flex-row sm:gap-8">
       <input
         type="email"
         id="email"
-        class="bg-transparent border border-gray-300 h-[4rem] text-white placeholder:text-white text-xl focus:ring-blue-500 focus:border-blue-500 block px-4 md:w-[30.5rem] w-full"
+        class="bg-transparent border border-gray-300 h-12 sm:h-[4rem] text-white placeholder:text-white text-lg sm:text-xl focus:ring-blue-500 focus:border-blue-500 block px-4 md:w-[30.5rem] w-full"
         placeholder="Enter your email"
         required
       />
-      <button class="px-10 w-max py-3 bg-primary-dark text-xl text-white">
+      <button
+        class="px-10 w-full tablet:w-max py-3 bg-primary-dark text-xl text-white"
+      >
         Submit
       </button>
     </div>
   </section>
 
   <!--Begin Trusted companies-->
-  <section class="max-w-[90%] py-10 mx-auto mt-20 w-full">
-    <h1 class="text-[1.75rem] my-4 text-[#010101] font-bold text-center">
+  <section
+    class="max-w-[80rem] px-6 py-4 sm:px-10 sm:py-10 mx-auto mt-20 w-full"
+  >
+    <h1
+      class="text-[1.5rem] sm:text-[1.75rem] my-4 text-[#010101] font-bold text-center"
+    >
       Our Trusted Company
     </h1>
-    <h2 class="text-center mb-4 text-heading text-[#010101]">
+    <h2
+      class="text-center text-mobileHeading mb-4 sm:text-heading text-[#010101]"
+    >
       Lorem Cupidatat Duis
     </h2>
 
     <p
-      class="text-center mx-auto text-[#010101] text-subText max-w-[60.25rem] mt-5 w-full"
+      class="text-center mx-auto text-[#010101] text-mobileSubText sm:text-subText max-w-[60.25rem] mt-5 w-full"
     >
       Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
       cillum dolor. Voluptate exercitation incididunt aliquip deserunt.

@@ -22,32 +22,44 @@
       />
     </video>
     <div
-      class="absolute sm:px-16 bg-black/60 flex flex-col gap-10 text-white top-0 bottom-0 right-0 left-0 h-full w-full"
+      class="absolute px-5 sm:px-16 bg-black/60 flex justify-center items-center sm:items-start flex-col gap-10 text-white top-0 bottom-0 right-0 left-0 h-full w-full"
     >
       <div
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"
-        class="my-16"
+        class="my-16 mb-[10rem]"
       >
-        <div class="max-w-[43rem] font-bold">
-          <h1 class="text-mainText mb-6 font-bold">
+        <div class="max-w-[43rem] text-center sm:text-left font-bold">
+          <h1
+            class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
+          >
             Digital Transformation & Consulting
           </h1>
         </div>
 
-        <p class="text-subText max-w-[34rem] mb-8 font-normal w-full">
+        <p
+          class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
+        >
           Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
           cillum dolor. Voluptate exercitation incididunt aliquip deserunt.
         </p>
 
-        <button class="px-12 w-max py-3 border border-white">Lorem</button>
+        <div class="flex items-center justify-center sm:justify-start">
+          <button
+            class="px-12 self-center w-max py-3 border mx-auto sm:mx-0 border-white"
+          >
+            Lorem
+          </button>
+        </div>
       </div>
     </div>
     <div
-      class="content text-white absolute bottom-0 w-full bg-black/60 py-8 px-10"
+      class="content h-[8rem] sm:h-auto p-4 text-white absolute bottom-0 w-full bg-black/60 sm:py-8 sm:px-10"
     >
-      <h1 class="text-subText capitalize pl-4">Our Technology partners</h1>
+      <h1 class="text-mobileSubText sm:text-subText capitalize pl-4">
+        Our Technology partners
+      </h1>
       <img
         src="https://visualbi.com/wp-content/uploads/visualbi-technology-partners.svg"
         alt="Visual BI Technology Partners"
@@ -59,24 +71,33 @@
   </section>
   <!--End Intro Section-->
   <!--Begin section 2-->
-  <section class="max-w-[90%] py-10 mx-auto mt-10 w-full">
+  <section
+    class="max-w-[80rem] px-6 py-4 sm:px-10 sm:py-10 mx-auto mt-5 sm:mt-10 w-full"
+  >
     <div
-      class="text-[3.625rem] text-[#010101] mx-auto max-w-[34.75rem] font-bold text-center"
+      class="text-mobileHeading sm:text-heading text-[#010101] mx-auto max-w-[40rem] font-bold text-center"
     >
       <h1>Innovative Solutions Beyond Excellence</h1>
-      <h1></h1>
     </div>
-    <p class="text-center text-subText mx-auto max-w-[43rem] mt-5 w-full">
+    <p
+      class="sm:text-center text-mobileSubText sm:text-subText mx-auto max-w-[43rem] mt-5 w-full"
+    >
       Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
       cillum dolor. Voluptate exercitation incididunt aliquip deserunt. Nulla
       Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
       dolor. Voluptate exercitation incididunt aliquip deserunt.
     </p>
-    <div class="mt-32 w-full items-start flex justify-between gap-10">
+    <div
+      class="mt-16 sm:mt-32 w-full items-start md:items-center flex-col tablet:flex-row flex justify-between gap-10"
+    >
       <div class="flex-grow" data-aos="fade-right" data-aos-delay="300">
-        <h1 class="text-heading font-bold">Lorem Cupidatat Duis</h1>
+        <h1
+          class="text-mobileHeading text-center sm:text-left sm:text-heading font-bold"
+        >
+          Lorem Cupidatat Duis
+        </h1>
         <p
-          class="max-w-[39rem] mt-3 w-full text-subText font-normal text-[#6F6D71]"
+          class="max-w-[39rem] mt-3 w-full text-mobileSubText sm:text-subText font-normal text-[#6F6D71]"
         >
           Voltican is a global management consulting, technology services and
           outsourcing company. Technology and outsourcing to help clients
@@ -103,7 +124,7 @@
           background-position: center;
           background-repeat: no-repeat;
         "
-        class="w-[34rem] relative h-[28.6rem]"
+        class="w-full sm:w-[34rem] relative h-[28.6rem]"
         data-aos="fade-left"
         data-aos-delay="500"
       >
@@ -124,24 +145,26 @@
   </section>
   <!--End section 2-->
   <!--Begin Services section-->
-  <section class="w-full max-w-[90%] mx-auto h-full">
-    <div class="text-text-black mt-20 mb-24">
-      <h1 class="text-mainText font-bold">Our Services</h1>
-      <p class="text-subText w-[90%]">
+  <section class="w-full px-6 py-4 sm:px-10 max-w-[80rem] mx-auto h-full">
+    <div class="text-text-black mt-20 mb-24 text-center lg:text-start">
+      <h1 class="text-mobileHeading sm:text-heading font-bold">Our Services</h1>
+      <p class="text-mobileSubText sm:text-subText w-full">
         We help enterprises to create their own path to digital fluency by
         building capabilities required for a smarter digital evolution. We
         tailor solutions to fit your business needs by blending our engineering,
         analytics and strategical expertise.
       </p>
     </div>
-    <div class="flex gap-8 items-center">
+    <div
+      class="flex flex-wrap justify-center lg:justify-start gap-8 items-start"
+    >
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full text-text-black md:max-w-[17rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 grayscale group-hover:grayscale-0 transition-all"
-          src="https://visualbi.com/wp-content/uploads/Data-Architecture-Engineering.svg"
+          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          src="../../../assets/big-data.png"
           alt=""
         />
 
@@ -178,11 +201,11 @@
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black flex gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full text-text-black md:max-w-[17rem] flex gap-4 flex-col items-center py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 grayscale group-hover:grayscale-0 transition-all"
-          src="https://visualbi.com/wp-content/uploads/visualbi-services-strategy-architecture-icon.svg"
+          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          src="../../../assets/data-analytics.png"
           alt=""
         />
 
@@ -219,11 +242,11 @@
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full text-text-black flex md:max-w-[17rem] items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 grayscale group-hover:grayscale-0 transition-all"
-          src="https://visualbi.com/wp-content/uploads/Modern-BI-Analytics.svg"
+          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          src="../../../assets/game-strategy.png"
           alt=""
         />
 
@@ -260,15 +283,15 @@
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full text-text-black md:max-w-[17rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 grayscale group-hover:grayscale-0 transition-all"
-          src="https://visualbi.com/wp-content/uploads/data-Science-Machine-Learning.svg"
+          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          src="../../../assets/machineLearning.png"
           alt=""
         />
 
-        <div class="p-5">
+        <div class="py-5 px-4">
           <h5 class="mb-2 text-subText uppercase font-bold tracking-tight">
             Data Science/AI/ML
           </h5>
@@ -279,7 +302,7 @@
           </p>
           <a
             routerLink="services/data-science"
-            class="inline-flex mb-8 items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="inline-flex md:mb-6 items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Read more
             <svg

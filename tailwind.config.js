@@ -6,11 +6,17 @@ module.exports = {
       height: {
         "intro-page-height": "calc(100vh - 5rem)",
       },
+      screens: {
+        tablet: "900px",
+      },
       fontSize: {
         mainText: "4rem",
-        heading: "2.5rem",
+        heading: "3.625rem",
         subText: "1.375rem",
-        buttonText:'1.375rem'
+        buttonText: "1.375rem",
+        mobileHeading: "2rem",
+        mobileMainText: "2.5rem",
+        mobileSubText: "1rem",
       },
       colors: {
         primary: "#0A67C7",

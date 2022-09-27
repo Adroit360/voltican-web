@@ -9,6 +9,7 @@ export class NavbarComponent implements OnInit {
   constructor() {}
   aboutUs = false;
   services = false;
+  toggleMobileMenu = false;
 
   ngOnInit(): void {}
 
@@ -25,5 +26,9 @@ export class NavbarComponent implements OnInit {
   onCloseDropdownMenu() {
     this.aboutUs = false;
     this.services = false;
+    this.toggleMobileMenu = false;
+  }
+  onToggleMenu() {
+    this.toggleMobileMenu = !this.toggleMobileMenu;
   }
 }
