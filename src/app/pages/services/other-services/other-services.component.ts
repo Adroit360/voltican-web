@@ -10,6 +10,7 @@ export class OtherServicesComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    window.scroll(0, 0);
     AOS.init();
   }
 }
