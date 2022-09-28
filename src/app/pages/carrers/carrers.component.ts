@@ -11,5 +11,6 @@ export class CarrersComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
+    window.scroll(0, 0);
   }
 }
