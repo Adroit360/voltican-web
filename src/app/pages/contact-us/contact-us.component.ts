@@ -9,6 +9,9 @@ import * as AOS from 'aos';
 export class ContactUsComponent implements OnInit {
   constructor() {}
 
+  lat = 51.678418;
+  lng = 7.809007;
+
   ngOnInit(): void {
     AOS.init();
   }

@@ -19,6 +19,7 @@ import { BigDataComponent } from './pages/services/big-data/big-data.component';
 import { StrategyComponent } from './pages/services/strategy/strategy.component';
 import { DataScienceComponent } from './pages/services/data-science/data-science.component';
 import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -38,13 +39,16 @@ import { OtherServicesComponent } from './pages/services/other-services/other-se
     BigDataComponent,
     StrategyComponent,
     DataScienceComponent,
-    OtherServicesComponent
+    OtherServicesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AgmCoreModule.forRoot({
+      apiKey: '',
+    }),
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

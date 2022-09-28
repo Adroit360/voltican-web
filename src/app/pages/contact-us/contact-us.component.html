@@ -14,32 +14,38 @@
     "
     class="h-[32rem] flex items-center justify-center w-full relative"
   >
-    <h1 class="text-mainText font-bold text-white">Contact Us</h1>
+    <h1 class="text-mobileMainText sm:text-mainText font-bold text-white">
+      Contact Us
+    </h1>
   </section>
   <!--End Intro Section-->
   <!--Begin Contact Form-->
-  <section class="my-16 flex w-full items-center flex-col justify-center">
+  <section
+    class="my-16 px-6 sm:px-20 tablet:px-0 flex w-full items-center flex-col justify-center"
+  >
     <div class="max-w-[73rem] w-full">
-      <div class="flex mb-20 gap-32 w-full text-text-black">
-        <div class="text-lg 2xl:text-[1.4rem]">
+      <div
+        class="flex flex-col flex-wrap sm:flex-row mb-20 gap-3 sm:gap-10 tablet:gap-32 w-full text-text-black"
+      >
+        <div class="text-mobileSubText md:text-subText">
           <h1 class="my-2 font-bold">Adress</h1>
           <p>4517 Washington,Manchester</p>
           <p>Kentucky 39495, Poland</p>
         </div>
-        <div class="text-lg 2xl:text-[1.4rem]">
+        <div class="text-mobileSubText md:text-subText">
           <h1 class="my-2 font-bold">Phone</h1>
           <p class="font-normal">(704) 555-0127</p>
         </div>
-        <div class="text-lg 2xl:text-[1.4rem]">
+        <div class="text-mobileSubText md:text-subText">
           <h1 class="my-2 font-bold">Email</h1>
           <p>Nyorodot.info@email.com</p>
         </div>
       </div>
-      <form class="w-full">
-        <div class="flex justify-between w-full">
+      <form class="w-full tablet:px-0">
+        <div class="flex flex-col md:flex-row gap-8 justify-between w-full">
           <!--name-->
           <div
-            class="form-control flex gap-4 relative max-w-[35.625rem] w-full"
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
           >
             <div class="relative w-full">
               <div
@@ -53,14 +59,14 @@
               <input
                 type="text"
                 id="name"
-                class="block px-4 py-6 pl-12 w-full border-b-2 text-lg 2xl:text-[1.4rem] placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
                 placeholder="Name"
               />
             </div>
           </div>
           <!--Email-->
           <div
-            class="form-control flex gap-4 relative max-w-[35.625rem] w-full"
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
           >
             <div class="relative w-full">
               <div
@@ -74,16 +80,18 @@
               <input
                 type="email"
                 id="email"
-                class="block px-4 py-6 pl-12 w-full border-b-2 text-lg 2xl:text-[1.4rem] placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
                 placeholder="example@gmail.com"
               />
             </div>
           </div>
         </div>
-        <div class="flex mt-10 justify-between w-full">
+        <div
+          class="flex flex-col tablet:flex-row gap-8 mt-10 justify-between w-full"
+        >
           <!--Subject-->
           <div
-            class="form-control flex gap-4 relative max-w-[35.625rem] w-full"
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
           >
             <div class="relative w-full">
               <div
@@ -97,14 +105,14 @@
               <input
                 type="text"
                 id="subject"
-                class="block px-4 py-6 pl-12 w-full border-b-2 text-lg 2xl:text-[1.4rem] placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
                 placeholder="Subject"
               />
             </div>
           </div>
           <!--phone number-->
           <div
-            class="form-control flex gap-4 relative max-w-[35.625rem] w-full"
+            class="form-control flex gap-4 relative tablet:max-w-[35.625rem] w-full"
           >
             <div class="relative w-full">
               <div
@@ -118,7 +126,7 @@
               <input
                 type="text"
                 id="phoneNumber"
-                class="block px-4 py-6 pl-12 w-full border-b-2 text-lg 2xl:text-[1.4rem] placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
+                class="block px-4 py-6 pl-12 w-full border-b-2 text-mobileSubText md:text-subText placeholder:text-text-gray border-border-gray focus:outline-none focus:border-text-black"
                 placeholder="Phone Number"
               />
             </div>
@@ -129,23 +137,27 @@
           <div class="form-control relative w-full">
             <label
               for="message"
-              class="text-lg 2xl:text-[1.4rem] text-text-gray"
+              class="text-mobileSubText md:text-subText text-text-gray"
               >Enter Your Messages</label
             >
             <div class="relative w-full">
               <textarea
                 type="text"
                 id="subject"
-                class="block py-6 w-full border-b-2 h-[6rem] text-lg 2xl:text-[1.4rem] border-border-gray focus:outline-none focus:border-text-black"
+                class="block py-6 w-full border-b-2 h-[6rem] text-mobileSubText md:text-subText border-border-gray focus:outline-none focus:border-text-black"
               ></textarea>
             </div>
           </div>
         </div>
-        <div class="flex w-full mt-3 items-center justify-between">
-          <p class="text-text-gray">
+        <div
+          class="flex flex-col gap-4 sm:flex-row w-full sm:mt-3 sm:items-center justify-between"
+        >
+          <p class="text-text-gray text-[0.8rem] md:text-subText">
             *Your email address will not be published.
           </p>
-          <button class="px-10 w-max py-3 bg-primary-dark text-xl text-white">
+          <button
+            class="px-10 w-full sm:w-max py-3 bg-primary-dark text-xl text-white"
+          >
             Submit
           </button>
         </div>
@@ -153,6 +165,12 @@
     </div>
   </section>
   <!--End Contact Form-->
+  <!--Map-->
+  <section class="h-[30rem] w-full max-w-[73rem] mx-auto">
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+  </section>
   <section
     style="
       background-image: linear-gradient(
@@ -175,7 +193,7 @@
       business strategy.
     </h1>
     <p
-      class="max-w-[49rem] w-full text-mobileSubText sm:text-subText"
+      class="max-w-[49rem] w-full text-mobileSubText md:text-subText"
       data-aos="fade-right"
       data-aos-delay="300"
     >
