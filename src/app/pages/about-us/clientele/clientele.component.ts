@@ -10,6 +10,5 @@ export class ClienteleComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
-    window.scroll(0, 0);
   }
 }
