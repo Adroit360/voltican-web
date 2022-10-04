@@ -28,6 +28,7 @@ export class NavbarComponent implements OnInit {
     this.services = false;
     this.toggleMobileMenu = false;
   }
+
   onToggleMenu() {
     this.toggleMobileMenu = !this.toggleMobileMenu;
   }

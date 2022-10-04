@@ -54,6 +54,7 @@
           <li
             routerLink="/services/data-analytics"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100"
               >Data Analytics &amp; Modern BI</a
@@ -62,6 +63,7 @@
           <li
             routerLink="/services/big-data-and-engineering"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100"
               >Big Data &amp; Engineering</a
@@ -70,6 +72,7 @@
           <li
             routerLink="/services/strategy-and-architecture"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100"
               >Strategy &amp; Architecture</a
@@ -78,12 +81,14 @@
           <li
             routerLink="/services/data-science"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100">Data Science/AI/ML</a>
           </li>
           <li
             routerLink="/services/other-services"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100">Other Services</a>
           </li>
@@ -114,15 +119,21 @@
           <li
             routerLink="/about/voltican-edge"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100">Voltican Edge</a>
           </li>
-          <li routerLink="/about/clientele" routerLinkActive="dropdown-active">
+          <li
+            routerLink="/about/clientele"
+            routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
+          >
             <a class="block py-2 px-4 hover:bg-gray-100">Clientele</a>
           </li>
           <li
             routerLink="/about/our-experts"
             routerLinkActive="dropdown-active"
+            (click)="onCloseDropdownMenu()"
           >
             <a class="block py-2 px-4 hover:bg-gray-100">Our Experts</a>
           </li>
