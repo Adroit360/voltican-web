@@ -19,7 +19,7 @@ const routes: Routes = [
     component: VolticanEdgeComponent,
   },
   { path: 'about/clientele', component: ClienteleComponent },
-  { path: 'about/our-experts', component: OurExpertsComponent },
+  // { path: 'about/our-experts', component: OurExpertsComponent },
   { path: 'careers', component: CarrersComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'services/data-analytics', component: DataAnalyticsComponent },
