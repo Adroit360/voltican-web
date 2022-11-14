@@ -20,6 +20,9 @@ import { StrategyComponent } from './pages/services/strategy/strategy.component'
 import { DataScienceComponent } from './pages/services/data-science/data-science.component';
 import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
 import { AgmCoreModule } from '@agm/core';
+import { NguCarouselModule } from '@ngu/carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,8 @@ import { AgmCoreModule } from '@agm/core';
     OtherServicesComponent,
   ],
   imports: [
+    NguCarouselModule,
+    CarouselModule,
     BrowserModule,
     AgmCoreModule.forRoot({
       apiKey: '',
