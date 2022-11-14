@@ -10,27 +10,25 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  apiData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-  customOptions: OwlOptions = {
-    loop: true,
-    autoplay: true,
-    center: true,
-    dots: false,
-    autoHeight: true,
-    autoWidth: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
+  headerInfo = [
+    {
+      title: 'Data Analytics & Modern BI ',
+      info: 'The insights that can be drawn from good analytics will help your business to properly understand industry and market data and place you in a better position ',
     },
-  };
+    {
+      title: 'Big Data Engineering',
+      info: 'We employ cost-effective, innovative forms of information processing for enhanced insight and decision-making.',
+    },
+    {
+      title: 'Strategy & Architecture ',
+      info: 'Following widely accepted and proven data strategy standards, Voltican has put together custom strategies for various companies that address your specific organizational needs',
+    },
+    {
+      title: ' Data Science & ML ',
+      info: 'At Voltican, we help your company employ the best tools and technology for the application of AI and ML in your business processes',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {
