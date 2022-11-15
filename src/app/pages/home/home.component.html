@@ -30,34 +30,30 @@
         data-aos-duration="1500"
         class="my-16 mb-[10rem]"
       >
-        <!-- <owl-carousel-o [options]="customOptions">
-          <ng-container *ngFor="let slide of apiData">
-            <ng-template class="slide" carouselSlide [id]="slide.toString()">
-              <p>slide number {{ slide }}</p>
-            </ng-template>
-          </ng-container>
-        </owl-carousel-o> -->
-        <!-- <div>
-          <div class="max-w-[43rem] text-center sm:text-left font-bold">
-            <h1
-              class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
-            >
-              Digital Transformation & Consulting
-            </h1>
-          </div>
-
-          <p
-            class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
+        <div class="carousel-container">
+          <div
+            *ngFor="let item of headerInfo; let i = index"
+            class="fade"
+            [ngClass]="selectedIndex === i ? 'item-active' : 'header-item'"
           >
-            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-            cillum dolor. Voluptate exercitation incididunt aliquip deserunt.
-          </p>
-        </div> -->
-        <app-carousel [headerInfo]="headerInfo"></app-carousel>
+            <div class="max-w-[40rem] text-center sm:text-left font-bold">
+              <h1
+                class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
+              >
+                {{ item.title }}
+              </h1>
+            </div>
 
+            <p
+              class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
+            >
+              {{ item.info }}
+            </p>
+          </div>
+        </div>
         <div class="flex items-center justify-center sm:justify-start">
           <button
-            routerLink="/services/data-analytics/"
+            [routerLink]="headerInfo[selectedIndex].link"
             class="px-12 self-center w-max py-3 border mx-auto sm:mx-0 border-white"
           >
             Our Services
