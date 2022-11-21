@@ -2,7 +2,7 @@
   <!--Begin Intro Section-->
   <section
     style="
-      background: url('../../../assets/main_header_fallbackimge.jpeg');
+      background: url('../../../assets/headerFallback.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -17,7 +17,7 @@
       class="absolute top-0 bottom-0 right-0 left-0 w-full h-full object-cover"
     >
       <source
-        src="https://res.cloudinary.com/moroafriyie/video/upload/v1663927777/my%20videos/1main_header_720p_hir8oy.mp4"
+        src="https://res.cloudinary.com/moroafriyie/video/upload/v1668447932/my%20videos/mainHeaderBanner_a8dqyl.mp4"
         type="video/mp4"
       />
     </video>
@@ -30,26 +30,37 @@
         data-aos-duration="1500"
         class="my-16 mb-[10rem]"
       >
-        <div class="max-w-[43rem] text-center sm:text-left font-bold">
-          <h1
-            class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
-          >
-            Digital Transformation & Consulting
-          </h1>
-        </div>
+        <!-- <owl-carousel-o [options]="customOptions">
+          <ng-container *ngFor="let slide of apiData">
+            <ng-template class="slide" carouselSlide [id]="slide.toString()">
+              <p>slide number {{ slide }}</p>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o> -->
+        <!-- <div>
+          <div class="max-w-[43rem] text-center sm:text-left font-bold">
+            <h1
+              class="text-mobileMainText sm:text-mainText sm:text-left mb-6 font-bold"
+            >
+              Digital Transformation & Consulting
+            </h1>
+          </div>
 
-        <p
-          class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
-        >
-          Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-          cillum dolor. Voluptate exercitation incididunt aliquip deserunt.
-        </p>
+          <p
+            class="text-mobileSubText text-center sm:text-left sm:text-subText max-w-[34rem] mb-8 font-normal w-full"
+          >
+            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
+            cillum dolor. Voluptate exercitation incididunt aliquip deserunt.
+          </p>
+        </div> -->
+        <app-carousel [headerInfo]="headerInfo"></app-carousel>
 
         <div class="flex items-center justify-center sm:justify-start">
           <button
+            routerLink="/services/data-analytics/"
             class="px-12 self-center w-max py-3 border mx-auto sm:mx-0 border-white"
           >
-            Lorem
+            Our Services
           </button>
         </div>
       </div>
@@ -80,37 +91,36 @@
       <h1>Innovative Solutions Beyond Excellence</h1>
     </div>
     <p
-      class="sm:text-center text-mobileSubText sm:text-subText mx-auto max-w-[43rem] mt-5 w-full"
+      class="sm:text-justify text-mobileSubText sm:text-subText mx-auto max-w-[43rem] mt-5 w-full"
     >
-      Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-      cillum dolor. Voluptate exercitation incididunt aliquip deserunt. Nulla
-      Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
-      dolor. Voluptate exercitation incididunt aliquip deserunt.
+      As technology consultants, our reputation is driven by a strong conviction
+      that a successful business investment requires attention to detail to
+      unlock value for any investment. Our success is attributable to the
+      outstanding quality of our culture, understanding of business life cycles,
+      and business strategy focused on excellence in client service.
     </p>
     <div
       class="mt-16 sm:mt-32 w-full items-start md:items-center flex-col tablet:flex-row flex justify-between gap-10"
     >
       <div class="flex-grow" data-aos="fade-right" data-aos-delay="300">
         <h1
-          class="text-mobileHeading text-center sm:text-left sm:text-heading font-bold"
+          class="text-mobileHeading text-center sm:text-left sm:text-[2.8rem] font-bold"
         >
-          Lorem Cupidatat Duis
+          Client Focused Approach
         </h1>
         <p
           class="max-w-[39rem] mt-3 w-full text-mobileSubText sm:text-subText font-normal text-[#6F6D71]"
         >
-          Voltican is a global management consulting, technology services and
-          outsourcing company. Technology and outsourcing to help clients
-          perform at the highest levels so they can create sustainable value for
-          their customers. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Modi aliquid doloribus totam porro laborum pariatur et
-          distinctio illo. Alias magni omnis iste, soluta tenetur animi
-          blanditiis repellendus corrupti exercitationem deleniti? Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit. Iste earum illum amet
-          atque unde dolore deleniti! Placeat, eius at! Optio molestias laborum
-          aspernatur mollitia temporibus reiciendis modi vitae iusto magni.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam facilis
-          mollitia id ad earum
+          We are partners with you and serve as a helpful resource for any
+          questions you may have. Our consultants integrate strategic insight,
+          operational excellence and a deep understanding of our client’s target
+          market to deliver results. Voltican is committed to client service
+          above all else, and our lasting client relationships prove it. Our
+          cross-industry expertise allows us to take advantage of rapidly
+          changing market conditions and serve as an invaluable asset to
+          management teams as they pursue growth across a variety of economic
+          cycles and geographic markets.
+
           <!-- <button class="px-10 mt-6 w-max py-3 bg-primary text-xl text-white">
           Contact us
         </button> -->
@@ -145,14 +155,17 @@
   </section>
   <!--End section 2-->
   <!--Begin Services section-->
-  <section class="w-full px-6 py-4 sm:px-10 max-w-[80rem] mx-auto h-full">
+  <section
+    class="w-full px-6 py-4 sm:px-10 max-w-[80rem] mx-auto h-full"
+    id="services"
+  >
     <div class="text-text-black mt-20 mb-24 text-center lg:text-start">
       <h1 class="text-mobileHeading sm:text-heading font-bold">Our Services</h1>
       <p class="text-mobileSubText sm:text-subText w-full">
-        We help enterprises to create their own path to digital fluency by
-        building capabilities required for a smarter digital evolution. We
-        tailor solutions to fit your business needs by blending our engineering,
-        analytics and strategical expertise.
+        For the Voltican team, our knowledge of industry trends and growth
+        drivers guides continuing business recommendations and project execution
+        initiatives. We are confident that our proactive approach enhances
+        opportunities to add value to every project.
       </p>
     </div>
     <div
@@ -160,10 +173,10 @@
     >
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black md:max-w-[17rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full text-text-black min-h-[30rem] md:max-w-[17rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          class="rounded-t-lg h-24 lg:grayscale group-hover:grayscale-0 transition-all"
           src="../../../assets/big-data.png"
           alt=""
         />
@@ -174,8 +187,8 @@
           </h5>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            We employ cost-effective, innovative forms of information processing
+            for enhanced insight and decision-making.
           </p>
           <a
             routerLink="services/big-data-and-engineering"
@@ -201,10 +214,10 @@
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black md:max-w-[17rem] flex gap-4 flex-col items-center py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full text-text-black min-h-[30rem] md:max-w-[17rem] flex gap-4 flex-col items-center py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          class="rounded-t-lg h-24 lg:grayscale group-hover:grayscale-0 transition-all"
           src="../../../assets/data-analytics.png"
           alt=""
         />
@@ -215,8 +228,9 @@
           </h5>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            The insights that can be drawn from good analytics will help your
+            business to properly understand industry and market data and place
+            you in a better position
           </p>
           <a
             routerLink="/services/data-analytics"
@@ -242,10 +256,10 @@
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black flex md:max-w-[17rem] items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full min-h-[30rem] text-text-black flex md:max-w-[17rem] items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          class="rounded-t-lg h-24 lg:grayscale group-hover:grayscale-0 transition-all"
           src="../../../assets/game-strategy.png"
           alt=""
         />
@@ -256,8 +270,9 @@
           </h5>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            Following widely accepted and proven data strategy standards,
+            Voltican has put together custom strategies for various companies
+            that address your specific organizational needs
           </p>
           <a
             routerLink="/services/strategy-and-architecture"
@@ -283,10 +298,10 @@
       <!--End Big data and engineering-->
       <!--Begin Big data and engineering-->
       <div
-        class="w-full text-text-black md:max-w-[17rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
+        class="w-full min-h-[30rem] text-text-black md:max-w-[17rem] flex items-center gap-4 flex-col py-4 px-4 group flex-grow cursor-pointer bg-white rounded-lg border border-gray-200 shadow-md"
       >
         <img
-          class="rounded-t-lg h-40 lg:grayscale group-hover:grayscale-0 transition-all"
+          class="rounded-t-lg h-24 lg:grayscale group-hover:grayscale-0 transition-all"
           src="../../../assets/machineLearning.png"
           alt=""
         />
@@ -297,8 +312,9 @@
           </h5>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            At Voltican, we help your company employ the best tools and
+            technology for the application of AI and ML in your business
+            processes
           </p>
           <a
             routerLink="services/data-science"

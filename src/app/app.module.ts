@@ -1,3 +1,4 @@
+import { CarouselModule } from './carousel/carousel.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,6 +21,9 @@ import { StrategyComponent } from './pages/services/strategy/strategy.component'
 import { DataScienceComponent } from './pages/services/data-science/data-science.component';
 import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
 import { AgmCoreModule } from '@agm/core';
+import { NguCarouselModule } from '@ngu/carousel';
+//import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { AgmCoreModule } from '@agm/core';
     OtherServicesComponent,
   ],
   imports: [
+    NguCarouselModule,
+    //CarouselModule,
+    CarouselModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AgmCoreModule.forRoot({
       apiKey: '',
     }),
