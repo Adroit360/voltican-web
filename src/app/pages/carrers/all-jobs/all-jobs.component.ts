@@ -11,6 +11,7 @@ import { CareerServiceService } from 'src/app/services/careers/career-service.se
 })
 export class AllJobsComponent implements OnInit {
   jobs$: Observable<Job[]>;
+  isLoading = false;
 
   constructor(
     private firestore: AngularFirestore,
@@ -19,12 +20,14 @@ export class AllJobsComponent implements OnInit {
     this.jobs$ = this.onGetAllJobsCollection();
     this.jobs$.subscribe((job) => {
       this.carrerService.setJobs(job);
+      this.isLoading = false;
     });
   }
 
   ngOnInit(): void {}
 
   onGetAllJobsCollection(): Observable<Job[]> {
+    this.isLoading = true;
     return this.firestore
       .collection('jobs', (orders) => orders.orderBy('datePosted', 'desc'))
       .valueChanges({ idField: 'jobId' })

@@ -29,6 +29,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.component';
 import { ApplyNowComponent } from './pages/carrers/apply-now/apply-now.component';
 import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
     ViewDetailsComponent,
     ApplyNowComponent,
     AllJobsComponent,
+    LoaderComponent,
   ],
   imports: [
     //CarouselModule,

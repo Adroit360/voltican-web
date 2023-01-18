@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { CareerServiceService } from 'src/app/services/careers/career-service.service';
 import { Observable } from 'rxjs';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-view-details',
@@ -13,17 +14,26 @@ import { Observable } from 'rxjs';
 })
 export class ViewDetailsComponent implements OnInit {
   job: Job = {} as Job;
+  htmlContent: any;
+  isLoading = false;
 
   constructor(
     private route: ActivatedRoute,
     private firestore: AngularFirestore,
-    private careerService: CareerServiceService
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.route.params.subscribe((params) => {
       let id = params['id'];
-      this.getItem(id).subscribe((item: Job) => (this.job = item));
+      this.getItem(id).subscribe((item: Job) => {
+        this.job = item;
+        this.isLoading = false;
+        this.htmlContent = this.sanitizer.bypassSecurityTrustHtml(
+          this.job.jobDescription
+        );
+      });
     });
   }
 

@@ -19,7 +19,11 @@
     </p>
   </div>
   <div class="max-w-[73rem] w-full">
-    <div class="gap-6 flex-col tablet:flex-row tablet:flex-wrap flex w-full">
+    <app-loader *ngIf="isLoading"></app-loader>
+    <div
+      class="gap-6 flex-col tablet:flex-row tablet:flex-wrap flex w-full"
+      *ngIf="!isLoading"
+    >
       <div
         *ngFor="let job of jobs$ | async"
         class="relative cursor-pointer w-full flex p-8 max-w-[35.6rem] min-h-[18.3rem] bg-white shadow-[0_19px_33px_rgba(0,0,0,0.13)]"
