@@ -1,4 +1,6 @@
-<form class="max-w-[70rem] w-full mx-auto my-8">
+<app-loader *ngIf="isLoading"></app-loader>
+
+<form class="max-w-[70rem] w-full mx-auto my-8" *ngIf="!isLoading">
   <div class="mb-8">
     <h1 class="text-mobileHeading">{{ job.title }}</h1>
     <div class="flex items-center gap-2">
