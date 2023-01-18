@@ -29,6 +29,7 @@ export class ViewDetailsComponent implements OnInit {
       let id = params['id'];
       this.getItem(id).subscribe((item: Job) => {
         this.job = item;
+        localStorage.setItem('job', JSON.stringify(this.job));
         this.isLoading = false;
         this.htmlContent = this.sanitizer.bypassSecurityTrustHtml(
           this.job.jobDescription
