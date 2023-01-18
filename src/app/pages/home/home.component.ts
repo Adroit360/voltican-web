@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NguCarouselConfig } from '@ngu/carousel';
-import { CarouselInterval } from '@ngu/carousel/lib/ngu-carousel/ngu-carousel';
 import * as AOS from 'aos';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',

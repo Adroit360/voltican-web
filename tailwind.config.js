@@ -8,6 +8,7 @@ module.exports = {
       },
       screens: {
         tablet: "900px",
+        "career-break": "700px",
       },
       fontSize: {
         mainText: "4rem",
