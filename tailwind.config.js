@@ -32,6 +32,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         "expert-cols": "repeat(auto-fit,minmax(250px,1fr))",
+        "careers-cols": "repeat(auto-fit,minmax(250px, 1fr))",
       },
     },
   },
