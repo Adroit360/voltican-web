@@ -20,10 +20,16 @@ import { BigDataComponent } from './pages/services/big-data/big-data.component';
 import { StrategyComponent } from './pages/services/strategy/strategy.component';
 import { DataScienceComponent } from './pages/services/data-science/data-science.component';
 import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
-import { AgmCoreModule } from '@agm/core';
-import { NguCarouselModule } from '@ngu/carousel';
 //import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.component';
+import { ApplyNowComponent } from './pages/carrers/apply-now/apply-now.component';
+import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -44,16 +50,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StrategyComponent,
     DataScienceComponent,
     OtherServicesComponent,
+    ViewDetailsComponent,
+    ApplyNowComponent,
+    AllJobsComponent,
+    LoaderComponent,
   ],
   imports: [
-    NguCarouselModule,
     //CarouselModule,
+    provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebase),
     CarouselModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AgmCoreModule.forRoot({
-      apiKey: '',
-    }),
     AppRoutingModule,
   ],
   providers: [],

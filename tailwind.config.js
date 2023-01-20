@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        "intro-page-height": "calc(100vh - 5rem)",
+        "intro-page-height": "85vh",
       },
       screens: {
         tablet: "900px",
+        "career-break": "700px",
       },
       fontSize: {
         mainText: "4rem",
@@ -31,6 +32,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         "expert-cols": "repeat(auto-fit,minmax(250px,1fr))",
+        "careers-cols": "repeat(auto-fit,minmax(250px, 1fr))",
       },
     },
   },

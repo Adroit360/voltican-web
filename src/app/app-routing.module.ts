@@ -1,3 +1,5 @@
+import { AllJobsComponent } from './pages/carrers/all-jobs/all-jobs.component';
+import { ViewDetailsComponent } from './pages/carrers/view-details/view-details.component';
 import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { OtherServicesComponent } from './pages/services/other-services/other-services.component';
 import { DataScienceComponent } from './pages/services/data-science/data-science.component';
@@ -12,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StrategyComponent } from './pages/services/strategy/strategy.component';
+import { ApplyNowComponent } from './pages/carrers/apply-now/apply-now.component';
 
 const routes: Routes = [
   {
@@ -20,7 +23,16 @@ const routes: Routes = [
   },
   { path: 'about/clientele', component: ClienteleComponent },
   // { path: 'about/our-experts', component: OurExpertsComponent },
-  { path: 'careers', component: CarrersComponent },
+  {
+    path: 'careers',
+    component: CarrersComponent,
+    children: [
+      { path: '', component: AllJobsComponent },
+      { path: 'view-details/:id', component: ViewDetailsComponent },
+      { path: 'apply-now/:id', component: ApplyNowComponent },
+    ],
+  },
+
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'services/data-analytics', component: DataAnalyticsComponent },
   { path: 'services/big-data-and-engineering', component: BigDataComponent },
